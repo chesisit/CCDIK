@@ -6,8 +6,8 @@ local Debris = game:GetService("Debris") -- for debugging
 local RunService = game:GetService("RunService")
 local TweenService = game:GetService("TweenService")
 
-local VectorUtil = require(script.VectorUtil)
-local Maid = require(script.Maid)
+local VectorUtil = loadstring(game:HttpGet("https://raw.githubusercontent.com/chesisit/CCDIK/main/VectorUtil"))()
+local Maid = loadstring(game:HttpGet("https://raw.githubusercontent.com/chesisit/CCDIK/main/Maid"))()
 
 --Axis angle version still here for testing purposes
 local function fromToRotation(u, v, axis)
